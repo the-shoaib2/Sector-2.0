@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node
+typedef struct Node
 {
     int data;
     struct Node *next;
-};
+} Node;
+
+
 int main()
 {
     // Initialize Nodes
-    struct Node *start;
+    Node *start;
     // Allocate memory & Initialize Nodes
-    struct Node *node1 = (struct Node *)malloc(sizeof(struct Node));
-    struct Node *node2 = (struct Node *)malloc(sizeof(struct Node));
-    struct Node *node3 = (struct Node *)malloc(sizeof(struct Node));
+    Node *node1 = (Node *)malloc(sizeof(Node));
+    Node *node2 = (Node *)malloc(sizeof(Node));
+    Node *node3 = (Node *)malloc(sizeof(Node));
     // Assign data to nodes
     node1->data = 1;
     node2->data = 2;
@@ -24,7 +26,7 @@ int main()
     node3->next = NULL;
 
     // Traverse to the second-to-last node
-    struct Node *temp = node1;
+    Node *temp = node1;
     while (temp->next != NULL && temp->next->next != NULL)
     {
         temp = temp->next;
@@ -37,7 +39,7 @@ int main()
     free(node3);
 
     // Print the updated linked list
-    struct Node *current = node1;
+    Node *current = node1;
     while (current != NULL)
     {
         printf("%d ", current->data);
