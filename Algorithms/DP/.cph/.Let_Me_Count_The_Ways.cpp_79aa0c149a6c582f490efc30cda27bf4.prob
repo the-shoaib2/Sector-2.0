@@ -1,0 +1,1 @@
+{"name":"Local: Let_Me_Count_The_Ways","url":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\Let_Me_Count_The_Ways.cpp","tests":[{"id":1714775845457,"input":"17","output":"There are 6 ways to produce 17 cents change."}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\Let_Me_Count_The_Ways.cpp","group":"local","local":true}

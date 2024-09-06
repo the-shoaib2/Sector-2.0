@@ -8,6 +8,7 @@ typedef struct MovieReview
     int Movie_ID;
     int Movies_Rating;
     char Review[1000];
+
     MovieReview *next;
 }MovieReview;
 
@@ -20,6 +21,8 @@ void add(int User_ID, int Movie_ID, int Movies_Rating, const char *Review)
     new_review->Movie_ID = Movie_ID;
     new_review->Movies_Rating = Movies_Rating;
     strcpy(new_review->Review, Review);
+
+    
     new_review->next = reviews;
     reviews = new_review;
 }

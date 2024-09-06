@@ -2,17 +2,21 @@
 #include <stdlib.h>
 
 // Define a structure for a node in the linked list
-struct Node {
+typedef struct Node
+{
     int data;
-    struct Node* next;
-};
+    struct Node *next;
+} Node;
 
-struct Node* top = NULL; // Initialize the top of the stack as NULL
+Node *top = NULL; // Initialize the top of the stack as NULL
 
 // Function to push data onto the stack
-void push(int data) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    if (newNode == NULL) {
+void push(int data)
+{
+    Node *newNode = new Node;
+    // Node *newNode = (Node *)malloc(sizeof(Node));
+    if (newNode == NULL)
+    {
         printf("Stack Overflow\n");
         return;
     }
@@ -23,12 +27,14 @@ void push(int data) {
 }
 
 // Function to pop data from the stack
-int pop() {
-    if (top == NULL) {
+int pop()
+{
+    if (top == NULL)
+    {
         printf("Stack is Empty\n");
         return -1; // Return a sentinel value to indicate an empty stack
     }
-    struct Node* temp = top;
+    Node *temp = top;
     int data = temp->data;
     top = top->next;
     free(temp);
@@ -36,22 +42,26 @@ int pop() {
 }
 
 // Function to check if the stack is empty
-int isEmpty() {
+int isEmpty()
+{
     return top == NULL;
 }
 
 // Function to print the stack contents
-void printStack() {
-    struct Node* current = top;
+void printStack()
+{
+    struct Node *current = top;
     printf("Stack: ");
-    while (current != NULL) {
+    while (current != NULL)
+    {
         printf("%d ", current->data);
         current = current->next;
     }
     printf("\n");
 }
 
-int main() {
+int main()
+{
     // Pushing values onto the stack
     push(10);
     push(20);
@@ -69,9 +79,12 @@ int main() {
     printf("Popped values: %d, %d, %d\n", poppedValue1, poppedValue2, poppedValue3);
 
     // Check if the stack is empty
-    if (isEmpty()) {
+    if (isEmpty())
+    {
         printf("Stack is Empty\n");
-    } else {
+    }
+    else
+    {
         printf("Stack is not Empty\n");
     }
 

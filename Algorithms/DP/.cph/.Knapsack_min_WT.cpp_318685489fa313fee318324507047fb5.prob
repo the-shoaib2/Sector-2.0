@@ -1,0 +1,1 @@
+{"name":"Local: Knapsack_min_WT","url":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\Knapsack_min_WT.cpp","tests":[{"id":1714827237115,"input":"4 9\n4 2 3 6\n3 7 6 4","output":""},{"id":1714827240949,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\Knapsack_min_WT.cpp","group":"local","local":true}

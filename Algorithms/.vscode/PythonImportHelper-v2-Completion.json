@@ -1,0 +1,11 @@
+[
+    {
+        "label": "fib_optimized",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def fib_optimized(n):\n    if n <= 1:\n        return n\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b\n    return b",
+        "detail": "test",
+        "documentation": {}
+    }
+]

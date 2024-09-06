@@ -8,7 +8,7 @@ struct Node {
 
 int main() {
     // Initialize Nodes
-    struct Node *start, *nodel;
+    struct Node *start;
     // Allocate memory & Initialize Nodes
     struct Node *node1 = (struct Node *)malloc(sizeof(struct Node));
     struct Node *node2 = (struct Node *)malloc(sizeof(struct Node));

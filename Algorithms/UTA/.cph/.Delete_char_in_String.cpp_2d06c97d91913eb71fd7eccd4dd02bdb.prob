@@ -1,0 +1,1 @@
+{"name":"Local: Delete_char_in_String","url":"d:\\Sector's\\Sector-2.0\\Algorithms\\UTA\\Delete_char_in_String.cpp","tests":[{"id":1715859709792,"input":"abcd\nacd","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Sector's\\Sector-2.0\\Algorithms\\UTA\\Delete_char_in_String.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: Knapsack_Max_Prft","url":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\Knapsack_Max_Prft.cpp","tests":[{"id":1714827256979,"input":"5 10\n3 20 7 12 11 \n100 50 25 99 68","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\Knapsack_Max_Prft.cpp","group":"local","local":true}

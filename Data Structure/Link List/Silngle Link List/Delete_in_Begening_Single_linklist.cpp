@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <bits/stdc++.h>
+
 
 struct Node
 {
@@ -10,11 +10,14 @@ struct Node
 int main()
 {
     // Initialize Nodes
-    struct Node *start, *nodel;
+    struct Node *start;
     // Allocate memory & Initialize Nodes
-    struct Node *node1 = (struct Node *)malloc(sizeof(struct Node));
-    struct Node *node2 = (struct Node *)malloc(sizeof(struct Node));
-    struct Node *node3 = (struct Node *)malloc(sizeof(struct Node));
+    // struct Node *node1 = (struct Node *)malloc(sizeof(struct Node));
+    struct Node *node1 = new Node;
+    // struct Node *node2 = (struct Node *)malloc(sizeof(struct Node));
+    struct Node *node2 = new Node;
+    // struct Node *node3 = (struct Node *)malloc(sizeof(struct Node));
+    struct Node *node3 = new Node;
     // Assign node data
     node1->data = 1;
     node2->data = 2;

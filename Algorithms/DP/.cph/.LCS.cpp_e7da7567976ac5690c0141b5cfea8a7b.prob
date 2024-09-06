@@ -1,0 +1,1 @@
+{"name":"Local: LCS","url":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\LCS.cpp","tests":[{"id":1714421096297,"input":"axyb\nabyxb","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Sector's\\Sector-2.0\\Algorithms\\DP\\LCS.cpp","group":"local","local":true}
