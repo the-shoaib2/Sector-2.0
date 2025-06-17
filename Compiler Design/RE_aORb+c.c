@@ -23,20 +23,25 @@ int main() {
             printf("Rejected: does not match (a|b)+c\n");
             continue;
         }
+
+
         for (i = 0; i < len - 1; i++) {
             if (str[i] != 'a' && str[i] != 'b') {
                 valid = 0;
                 break;
             }
         }
+
         if (str[len - 1] != 'c') {
             valid = 0;
         }
+
         if (valid && (len - 1) >= 1) {
             printf("Accepted: matches (a|b)+c\n");
         } else {
             printf("Rejected: does not match (a|b)+c\n");
         }
+        
     }
     return 0;
 }
