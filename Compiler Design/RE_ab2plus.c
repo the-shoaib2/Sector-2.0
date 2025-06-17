@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+
+// This program checks if the input string matches the regex (ab)+
+// It accepts strings that consist of one or more occurrences of "ab", "abab", "ababab" in sequence.  
+// It rejects any string that does not match this pattern.
+
 int main() {
     char str[256];
 
