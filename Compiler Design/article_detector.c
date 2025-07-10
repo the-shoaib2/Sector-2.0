@@ -38,6 +38,10 @@ this is an articale char *m_strtok(char *str, const char *delim)
     return start;
 }
 
+
+
+
+
 int main()
 {
     char str[2048];
