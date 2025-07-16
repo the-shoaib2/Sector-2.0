@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-this is an articale char *m_strtok(char *str, const char *delim)
+//this is an articale 
+char *m_strtok(char *str, const char *delim)
 {
     static char *current = NULL;
 
