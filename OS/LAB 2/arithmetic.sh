@@ -6,6 +6,8 @@
 #          3. expr command
 # Output: Arithmetic operations on the two numbers
 
+ 
+
 # Take inputs on the same line
 echo -n "Enter first number: "
 read a
