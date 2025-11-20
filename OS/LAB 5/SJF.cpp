@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Shortest Job First, non-preemptive
+
 struct process {
     int pid;
     int bt;
