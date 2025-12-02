@@ -9,11 +9,8 @@
  
 
 # Take inputs on the same line
-echo -n "Enter first number: "
-read a
-
-echo -n "Enter second number: "
-read b
+read -p "Enter first number: " a
+read -p "Enter second number: " b
 
 echo
 echo "===== Using Double Parenthesis (( )) ====="
