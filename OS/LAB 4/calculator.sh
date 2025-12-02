@@ -53,3 +53,123 @@ case $choice in
     echo "Invalid choice!"
     ;;
 esac
+
+
+
+┌──root@kali:[~LAB 4] 
+└─#./calculator.sh
+Enter first number: 10
+Enter second number: 20
+
+Choose operation:
+1) Addition (+)
+2) Subtraction (-)
+3) Multiplication (*)
+4) Division (/)
+5) Modulo (%)
+6) Percentage (a is what percent of b)
+7) Exit
+Enter your choice [1-7]: 1
+Result = 30
+
+
+# ┌──root@kali:[~LAB 4] 
+# └─#./calculator.sh
+# Enter first number: 10
+# Enter second number: 20
+
+# Choose operation:
+# 1) Addition (+)
+# 2) Subtraction (-)
+# 3) Multiplication (*)
+# 4) Division (/)
+# 5) Modulo (%)
+# 6) Percentage (a is what percent of b)
+# 7) Exit
+# Enter your choice [1-7]: 2
+# Result = -10
+
+
+# ┌──root@kali:[~LAB 4] 
+# └─#./calculator.sh
+# Enter first number: 10
+# Enter second number: 20
+
+# Choose operation:
+# 1) Addition (+)
+# 2) Subtraction (-)
+# 3) Multiplication (*)
+# 4) Division (/)
+# 5) Modulo (%)
+# 6) Percentage (a is what percent of b)
+# 7) Exit
+# Enter your choice [1-7]: 3
+# Result = 200
+
+
+# ┌──root@kali:[~LAB 4] 
+# └─#./calculator.sh
+# Enter first number: 10
+# Enter second number: 20
+
+# Choose operation:
+# 1) Addition (+)
+# 2) Subtraction (-)
+# 3) Multiplication (*)
+# 4) Division (/)
+# 5) Modulo (%)
+# 6) Percentage (a is what percent of b)
+# 7) Exit
+# Enter your choice [1-7]: 4
+# Result = 0.50
+
+
+# ┌──root@kali:[~LAB 4] 
+# └─#./calculator.sh
+# Enter first number: 10
+# Enter second number: 20
+
+# Choose operation:
+# 1) Addition (+)
+# 2) Subtraction (-)
+# 3) Multiplication (*)
+# 4) Division (/)
+# 5) Modulo (%)
+# 6) Percentage (a is what percent of b)
+# 7) Exit
+# Enter your choice [1-7]: 5
+# Result = 10
+
+
+# ┌──root@kali:[~LAB 4] 
+# └─#./calculator.sh
+# Enter first number: 10
+# Enter second number: 20
+
+# Choose operation:
+# 1) Addition (+)
+# 2) Subtraction (-)
+# 3) Multiplication (*)
+# 4) Division (/)
+# 5) Modulo (%)
+# 6) Percentage (a is what percent of b)
+# 7) Exit
+# Enter your choice [1-7]: 6
+# Result = 50%
+
+
+# ┌──root@kali:[~LAB 4] 
+# └─#./calculator.sh
+# Enter first number: 10
+# Enter second number: 20
+
+# Choose operation:
+# 1) Addition (+)
+# 2) Subtraction (-)
+# 3) Multiplication (*)
+# 4) Division (/)
+# 5) Modulo (%)
+# 6) Percentage (a is what percent of b)
+# 7) Exit
+# Enter your choice [1-7]: 7
+# Goodbye!

@@ -74,3 +74,36 @@ else
    echo "Division:       $div"
    echo "Modulus:        $mod"
 fi
+
+
+
+
+
+# ┌──root@kali:[~LAB 2] 
+# └─#./arithmetic.sh
+# Enter first number: 10
+# Enter second number: 20
+
+# ===== Using Double Parenthesis (( )) =====
+
+# Addition:       30
+# Subtraction:    -10
+# Multiplication: 200
+# Division:       5
+# Modulus:        0
+
+# ===== Using let Command `` =====
+
+# Addition:       30
+# Subtraction:    -10
+# Multiplication: 200
+# Division:       5
+# Modulus:        0
+
+# ===== Using expr Command =====
+
+# Addition:       30
+# Subtraction:    -10
+# Multiplication: 200
+# Division:       5
+# Modulus:        0
