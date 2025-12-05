@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Priority Scheduling Algorithm (Non-Preemptive)
 struct process {
     int pid;
     int bt;

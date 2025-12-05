@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Round Robin (RR) Scheduling Algorithm
 struct process {
     int pid;
     int bt;

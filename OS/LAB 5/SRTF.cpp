@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Shortest Remaining Time First (SRTF) Scheduling Algorithm
 struct process {
     int pid;
     int bt;

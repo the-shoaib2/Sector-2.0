@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// First-Come, First-Served (FCFS) Scheduling Algorithm
+
 struct process {
     int pid; // process id
     int bt;  // burst time
