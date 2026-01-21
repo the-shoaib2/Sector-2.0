@@ -1,0 +1,15 @@
+# Build artifacts
+build/
+bin/
+obj/
+*.exe
+*.o
+*.out
+main
+
+# Debugging symbols
+*.dSYM/
+
+# OS specific files
+.DS_Store
+Thumbs.db

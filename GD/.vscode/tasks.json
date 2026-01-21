@@ -4,18 +4,70 @@
     {
       "label": "build",
       "type": "shell",
-      "command": "g++",
-      "args": [
-        "-o",
-        "main",
-        "main.cpp",
-        "-lglut",
-        "-lGL",
-        "-lGLEW"
-      ],
+      "osx": {
+        "command": "clang++",
+        "args": [
+          "${workspaceFolder}/main.cpp",
+          "-o",
+          "${workspaceFolder}/build/main",
+          "-framework",
+          "GLUT",
+          "-framework",
+          "OpenGL",
+          "-DGL_SILENCE_DEPRECATION",
+          "-g"
+        ]
+      },
+      "linux": {
+        "command": "g++",
+        "args": [
+          "${workspaceFolder}/main.cpp",
+          "-o",
+          "${workspaceFolder}/build/main",
+          "-lglut",
+          "-lGL",
+          "-lGLU",
+          "-g"
+        ]
+      },
+      "windows": {
+        "command": "g++",
+        "args": [
+          "${workspaceFolder}/main.cpp",
+          "-o",
+          "${workspaceFolder}/build/main.exe",
+          "-lfreeglut",
+          "-lopengl32",
+          "-lglu32",
+          "-g"
+        ]
+      },
       "group": {
         "kind": "build",
         "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "create build dir",
+      "type": "shell",
+      "osx": {
+        "command": "mkdir -p ${workspaceFolder}/build/Debug"
+      },
+      "linux": {
+        "command": "mkdir -p ${workspaceFolder}/build/Debug"
+      },
+      "windows": {
+        "command": "if not exist build\\Debug mkdir build\\Debug"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
       }
     }
   ]

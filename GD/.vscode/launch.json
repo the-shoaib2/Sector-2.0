@@ -2,23 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C++ Debug",
+      "name": "Debug OpenGL App",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/main",
+      "osx": {
+        "program": "${workspaceFolder}/build/main",
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "program": "${workspaceFolder}/build/main",
+        "MIMode": "gdb"
+      },
+      "windows": {
+        "program": "${workspaceFolder}/build/main.exe",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb.exe"
+      },
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": true,
-      "MIMode": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
       "preLaunchTask": "build"
     },
     {
@@ -26,8 +30,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/ratulhasan/Desktop/Shoaib/Sector-2.0/GD",
-      "program": "/Users/ratulhasan/Desktop/Shoaib/Sector-2.0/GD/build/Debug/outDebug"
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/build/Debug/outDebug"
     }
   ]
 }

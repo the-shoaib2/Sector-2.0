@@ -35,9 +35,17 @@
   ],
   "C_Cpp_Runner.enableWarnings": true,
   "C_Cpp_Runner.warningsAsError": false,
-  "C_Cpp_Runner.compilerArgs": [],
-  "C_Cpp_Runner.linkerArgs": [],
-  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.compilerArgs": [
+    "-I/opt/homebrew/include",
+    "-DGL_SILENCE_DEPRECATION"
+  ],
+  "C_Cpp_Runner.linkerArgs": [
+    "-framework GLUT",
+    "-framework OpenGL"
+  ],
+  "C_Cpp_Runner.includePaths": [
+    "/opt/homebrew/include"
+  ],
   "C_Cpp_Runner.includeSearch": [
     "*",
     "**/*"
