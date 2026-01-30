@@ -1,0 +1,32 @@
+#ifndef TEXTURE_H_
+#define TEXTURE_H_
+
+class Texture {
+	
+public:
+
+	/*** Counter to keep track of the last loaded texture ***/
+	int num_texture;
+
+	int loadTexture(char *filename);
+
+	/**** BMP file info structure ****/
+	typedef struct {
+	    unsigned int   biSize;           /* Size of info header */
+	    int            biWidth;          /* Width of image */
+	    int            biHeight;         /* Height of image */
+	    unsigned short biPlanes;         /* Number of color planes */
+	    unsigned short biBitCount;       /* Number of bits per pixel */
+	    unsigned int   biCompression;    /* Type of compression to use */
+	    unsigned int   biSizeImage;      /* Size of image data */
+	    int            biXPelsPerMeter;  /* X pixels per meter */
+	    int            biYPelsPerMeter;  /* Y pixels per meter */
+	    unsigned int   biClrUsed;        /* Number of colors used */
+	    unsigned int   biClrImportant;   /* Number of important colors */
+	    char *data;
+	    } bitmapHeader;
+	    
+	void test();
+};
+
+#endif /*TEXTURE_H_*/
