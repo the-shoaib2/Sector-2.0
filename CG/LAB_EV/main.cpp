@@ -183,20 +183,37 @@ void display()
     glEnd();
 
     // Antenna 
+    // glColor3f(0.5, 1.0, 0.9);  
+    // glBegin(GL_TRIANGLES);
+    // glVertex2i(190, 300);
+    // glVertex2i(165, 360);
+    // glVertex2i(177, 360);
+    // glEnd();
+
+    
+    // glColor3f(1.0, 0.0, 0.0);
+    // glBegin(GL_TRIANGLES);
+    // glVertex2i(210, 300);  
+    // glVertex2i(215, 360);
+    // glVertex2i(227, 360);
+    // glEnd();
+
+        // Antenna 
     glColor3f(0.5, 1.0, 0.9);  
     glBegin(GL_TRIANGLES);
-    glVertex2i(190, 300);
-    glVertex2i(165, 360);
-    glVertex2i(177, 360);
+    glVertex2i(197, 290);
+    glVertex2i(170, 330);
+    glVertex2i(185, 330);
     glEnd();
 
     
     glColor3f(1.0, 0.0, 0.0);
     glBegin(GL_TRIANGLES);
     glVertex2i(210, 300);  
-    glVertex2i(215, 360);
+    glVertex2i(185, 330);
     glVertex2i(227, 360);
     glEnd();
+
 
 
 
