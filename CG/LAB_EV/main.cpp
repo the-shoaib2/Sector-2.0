@@ -186,8 +186,8 @@ void draw()
     glColor3f(0.5, 1.0, 0.9);  
     glBegin(GL_TRIANGLES);
     glVertex2i(190, 300);
-    glVertex2i(185, 360);
-    glVertex2i(195, 360);
+    glVertex2i(165, 360);
+    glVertex2i(178, 360);
     glEnd();
 
     
