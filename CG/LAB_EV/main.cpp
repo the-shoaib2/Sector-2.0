@@ -182,41 +182,20 @@ void display()
     glVertex2i(430, 270);
     glEnd();
 
-    // Antenna 
-    // glColor3f(0.5, 1.0, 0.9);  
-    // glBegin(GL_TRIANGLES);
-    // glVertex2i(190, 300);
-    // glVertex2i(165, 360);
-    // glVertex2i(177, 360);
-    // glEnd();
-
-    
-    // glColor3f(1.0, 0.0, 0.0);
-    // glBegin(GL_TRIANGLES);
-    // glVertex2i(210, 300);  
-    // glVertex2i(215, 360);
-    // glVertex2i(227, 360);
-    // glEnd();
-
-        // Antenna 
-    glColor3f(0.5, 1.0, 0.9);  
+    // Antenna - 
+    glColor3f(0.2, 0.6, 0.5);  
     glBegin(GL_TRIANGLES);
     glVertex2i(197, 290);
     glVertex2i(170, 330);
     glVertex2i(185, 330);
     glEnd();
 
-    
-    glColor3f(1.0, 0.0, 0.0);
+    glColor3f(0.8, 0.2, 0.2); 
     glBegin(GL_TRIANGLES);
-    glVertex2i(210, 300);  
-    glVertex2i(185, 330);
-    glVertex2i(227, 360);
+    glVertex2i(203, 290);  
+    glVertex2i(230, 330);
+    glVertex2i(215, 330);
     glEnd();
-
-
-
-
 
     glFlush();
 }
@@ -228,7 +207,7 @@ int main(int argc, char **argv)
     glutInitWindowSize(800, 600);
     glutCreateWindow("LAB_EV");
     glClearColor(1, 1, 1, 1);
-    gluOrtho2D(0, 500, 0, 500);
+    gluOrtho2D(-50, 450, -50, 450);
     glutDisplayFunc(display);
     glutMainLoop();
     return 0;
