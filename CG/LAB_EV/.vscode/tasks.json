@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "osx": {
+        "command": "mkdir -p build/Debug && clang++ *.cpp -o build/app -framework GLUT -framework OpenGL -DGL_SILENCE_DEPRECATION -g && ln -sf ../app build/Debug/outDebug"
+      },
+      "linux": {
+        "command": "mkdir -p build/Debug && g++ *.cpp -o build/app -lglut -lGL -lGLU -g && ln -sf ../app build/Debug/outDebug"
+      },
+      "windows": {
+        "options": {
+          "shell": {
+            "executable": "powershell.exe",
+            "args": [
+              "-NoProfile",
+              "-Command"
+            ]
+          }
+        },
+        "command": "if (!(Test-Path build)) { New-Item -ItemType Directory -Path build | Out-Null }; g++ *.cpp -o build/app.exe -I\"C:/freeglut/include\" -L\"C:/freeglut/lib\" -lfreeglut -lopengl32 -lglu32 -g -mwindows; if ($LASTEXITCODE -eq 0) { if (Test-Path \"C:/freeglut/bin/freeglut.dll\") { Copy-Item \"C:/freeglut/bin/freeglut.dll\" build/freeglut.dll -Force; Write-Host 'Build successful! FreeGLUT DLL copied.' -ForegroundColor Green } else { Write-Host 'Build successful!' -ForegroundColor Green } } else { Write-Host 'Build failed!' -ForegroundColor Red; exit 1 }"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true,
+        "showReuseMessage": false
+      }
+    }
+  ]
+}
