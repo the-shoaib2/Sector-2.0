@@ -187,7 +187,7 @@ void display()
     glBegin(GL_TRIANGLES);
     glVertex2i(190, 300);
     glVertex2i(165, 360);
-    glVertex2i(178, 360);
+    glVertex2i(177, 360);
     glEnd();
 
     
@@ -195,7 +195,7 @@ void display()
     glBegin(GL_TRIANGLES);
     glVertex2i(210, 300);  
     glVertex2i(215, 360);
-    glVertex2i(225, 360);
+    glVertex2i(227, 360);
     glEnd();
 
 
@@ -211,7 +211,7 @@ int main(int argc, char **argv)
     glutInitWindowSize(800, 600);
     glutCreateWindow("LAB_EV");
     glClearColor(1, 1, 1, 1);
-    gluOrtho2D(-50, 450, -50, 450);
+    gluOrtho2D(0, 500, 0, 500);
     glutDisplayFunc(display);
     glutMainLoop();
     return 0;
