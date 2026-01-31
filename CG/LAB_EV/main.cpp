@@ -1,6 +1,6 @@
 #include <GL/glut.h>
 
-void draw()
+void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
@@ -194,8 +194,8 @@ void draw()
     glColor3f(1.0, 0.0, 0.0);
     glBegin(GL_TRIANGLES);
     glVertex2i(210, 300);  
-    glVertex2i(205, 360);
     glVertex2i(215, 360);
+    glVertex2i(225, 360);
     glEnd();
 
 
@@ -212,7 +212,7 @@ int main(int argc, char **argv)
     glutCreateWindow("LAB_EV");
     glClearColor(1, 1, 1, 1);
     gluOrtho2D(-50, 450, -50, 450);
-    glutDisplayFunc(draw);
+    glutDisplayFunc(display);
     glutMainLoop();
     return 0;
 }
