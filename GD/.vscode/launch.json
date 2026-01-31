@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug OpenGL App",
+      "type": "cppdbg",
+      "request": "launch",
+      "osx": {
+        "program": "${workspaceFolder}/build/main",
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "program": "${workspaceFolder}/build/main",
+        "MIMode": "gdb"
+      },
+      "windows": {
+        "program": "${workspaceFolder}/build/main.exe",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb.exe"
+      },
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/build/Debug/outDebug"
+    }
+  ]
+}
